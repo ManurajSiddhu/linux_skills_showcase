@@ -1,110 +1,106 @@
-# 🐧 Linux Basic Commands Guide
+# Linux Basic Commands (My Practice Notes)
 
-This document contains the most important Linux commands that every **System Administrator / DevOps Engineer** must know.
-
----
-
-## 📂 File and Directory Commands
-
-| Command | Description | Example |
-|--------|-------------|---------|
-| `pwd` | Show current directory path | `pwd` |
-| `ls` | List files and directories | `ls -l` |
-| `cd` | Change directory | `cd /etc` |
-| `mkdir` | Create directory | `mkdir projects` |
-| `rmdir` | Remove empty directory | `rmdir test` |
-| `touch` | Create empty file | `touch file.txt` |
-| `cp` | Copy files/directories | `cp a.txt b.txt` |
-| `mv` | Move or rename files | `mv old.txt new.txt` |
-| `rm` | Remove files | `rm file.txt` |
-| `rm -rf` | Force remove directory | `rm -rf folder/` |
+This file contains the most common Linux commands that I use while practicing
+system administration and DevOps tasks.
 
 ---
 
-## 📄 File Viewing Commands
+## Navigation & Directory Commands
 
-| Command | Description | Example |
-|--------|-------------|---------|
-| `cat` | View file content | `cat file.txt` |
-| `less` | Scroll file content | `less /var/log/messages` |
-| `head` | View first lines | `head -n 10 file.txt` |
-| `tail` | View last lines | `tail -n 20 file.txt` |
-| `tail -f` | Live log monitoring | `tail -f /var/log/syslog` |
-
+```bash
+pwd              # current working directory
+ls               # list files
+ls -l            # detailed listing
+ls -a            # show hidden files
+cd /etc          # move into /etc directory
+cd ..            # go one step back
+mkdir testdir    # create directory
+rm -rf testdir   # delete directory forcefully
+```
 ---
 
-## 🔍 Searching Commands
+## File Handling Commands
 
-| Command | Description | Example |
-|--------|-------------|---------|
-| `find` | Search files by name | `find /home -name "*.sh"` |
-| `grep` | Search text inside file | `grep "error" log.txt` |
-| `wc` | Count lines/words | `wc -l file.txt` |
-
+```bash
+touch file.txt           # create empty file
+cp file1 file2           # copy file
+mv oldname newname       # rename file
+rm file.txt              # remove file
+cat file.txt             # view file content
+less file.txt            # scroll file
+head file.txt            # first 10 lines
+tail file.txt            # last 10 lines
+tail -f /var/log/messages # live log monitoring
+```
 ---
 
-## 👤 User and Permission Commands
+## Searching in Linux
 
-| Command | Description | Example |
-|--------|-------------|---------|
-| `whoami` | Show current user | `whoami` |
-| `id` | User UID/GID info | `id siddhu` |
-| `chmod` | Change permissions | `chmod 755 script.sh` |
-| `chown` | Change ownership | `chown user:user file.txt` |
-
+```bash
+find /home -name "*.sh"     # search scripts
+grep "error" logfile.txt    # search word inside file
+wc -l file.txt              # count lines
+```
 ---
 
-## ⚙️ Process Management
+## User and Permission Related
 
-| Command | Description | Example |
-|--------|-------------|---------|
-| `ps` | Show running processes | `ps aux` |
-| `top` | Live system monitoring | `top` |
-| `kill` | Kill process by PID | `kill 1234` |
-| `uptime` | System running time | `uptime` |
+```bash
+whoami          # current user
+id siddhu       # UID and group info
 
+chmod 755 script.sh    # give execute permission
+chown user:user file   # change ownership
+```
 ---
 
-## 💾 Disk and Memory Commands
+## Process Monitoring
 
-| Command | Description | Example |
-|--------|-------------|---------|
-| `df -h` | Disk usage | `df -h` |
-| `du -sh` | Folder size | `du -sh /var/log` |
-| `free -m` | Memory usage | `free -m` |
-| `lsblk` | List block devices | `lsblk` |
-
+```bash
+ps aux          # running processes
+top             # live monitoring
+kill -9 PID     # force kill a process
+uptime          # system running time
+```
 ---
 
-## 🌐 Networking Basics
+## Disk and Memory Checks
 
-| Command | Description | Example |
-|--------|-------------|---------|
-| `ping` | Check connectivity | `ping google.com` |
-| `ip a` | Show IP address | `ip a` |
-| `ss -tulnp` | Check open ports | `ss -tulnp` |
-| `curl` | Test URL/API | `curl ifconfig.me` |
-
+```bash
+df -h           # disk usage
+du -sh folder/  # folder size
+free -m         # memory usage
+lsblk           # list disks/partitions
+```
 ---
 
-## 📦 Package Management (RHEL/CentOS)
+## Networking Commands I Use
 
-| Command | Description | Example |
-|--------|-------------|---------|
-| `yum install` | Install package | `yum install nginx` |
-| `yum remove` | Remove package | `yum remove httpd` |
-| `yum update` | Update system | `yum update -y` |
-
+```bash
+ping google.com       # connectivity check
+ip a                  # check IP address
+ss -tulnp             # open ports
+curl ifconfig.me      # public IP check
+```
 ---
 
-## 🔥 Service Management (systemd)
+## Service Management (systemctl)
 
-| Command | Description | Example |
-|--------|-------------|---------|
-| `systemctl start` | Start service | `systemctl start nginx` |
-| `systemctl stop` | Stop service | `systemctl stop nginx` |
-| `systemctl status` | Check service status | `systemctl status sshd` |
-| `systemctl enable` | Enable at boot | `systemctl enable nginx` |
+```bash
+systemctl status sshd
+systemctl start nginx
+systemctl stop nginx
+systemctl enable nginx
+journalctl -xe        # logs for troubleshooting
+```
+---
 
+## Package Installation (RHEL/CentOS)
 
-
+```bash
+yum install nginx -y
+yum remove httpd -y
+yum update -y
+```
+---
+`
