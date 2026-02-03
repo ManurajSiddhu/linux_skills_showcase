@@ -1,7 +1,7 @@
 # Linux Basic Commands (My Practice Notes)
 
 This file contains the most common Linux commands that I use while practicing
-system administration and DevOps tasks.
+Linux tasks.
 
 ---
 
