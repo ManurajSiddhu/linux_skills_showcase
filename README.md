@@ -1,6 +1,6 @@
 # 🐧 Linux Skills Portfolio Repository
 
-Welcome to my **Linux System Administration & DevOps Skills Showcase** repository.
+Welcome to my **Linux System Skills Showcase** repository.
 
 This repo is created to demonstrate my practical knowledge of:
 
@@ -11,16 +11,6 @@ This repo is created to demonstrate my practical knowledge of:
 - DevOps Tools on Linux  
 - Real-world Projects  
 - Interview Preparation  
-
-This repository is useful for:
-
-✅ Linux Beginners  
-✅ DevOps Freshers  
-✅ System Administrator Roles  
-✅ Interview Revision  
-✅ Hands-on Practice  
-
----
 
 ## 📌 Skills Covered
 
