@@ -106,18 +106,5 @@ This document contains the most important Linux commands that every **System Adm
 | `systemctl status` | Check service status | `systemctl status sshd` |
 | `systemctl enable` | Enable at boot | `systemctl enable nginx` |
 
----
 
-## ✅ Summary
-
-These commands are essential for:
-
-- Linux Administration  
-- DevOps Engineering  
-- Cloud Support Roles  
-- Troubleshooting Servers  
-
----
-
-📌 Next File: **permissions.md**  
 
