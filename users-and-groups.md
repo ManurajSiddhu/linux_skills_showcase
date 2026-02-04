@@ -29,6 +29,8 @@ uid=1000(siddhu) gid=1000(siddhu) groups=1000(siddhu),1003(devopsengineer),1008(
 who
 siddhu   tty2         2026-02-03 21:43 (local)
 ```
+![img](images/img7.png)
+
 ## Creating a New User
 ```bash
 sudo useradd username  #adduser
@@ -45,6 +47,8 @@ sudo groupadd devops  #Creating a Group
 sudo usermod -aG devops devuser  #Adding User to Group
 sudo gpasswd -d devuser devops  #sudo gpasswd -d devuser devops
 ```
+![img](images/img8.png)
+
 ## Important System Files
 
 | File          | Purpose                  |
