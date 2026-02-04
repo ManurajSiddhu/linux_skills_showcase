@@ -17,7 +17,7 @@ cd ..            # go one step back
 mkdir testdir    # create directory
 rm -rf testdir   # delete directory forcefully
 ```
-![img](../images/img1.png)
+![img](images/img1.png)
 ---
 
 ## File Handling Commands
@@ -33,7 +33,7 @@ head file.txt            # first 10 lines
 tail file.txt            # last 10 lines
 tail -f /var/log/messages # live log monitoring
 ```
-![img](../images/img2.png)
+![img](images/img2.png)
 ---
 
 ## Searching in Linux
@@ -43,7 +43,7 @@ find /home -name "*.sh"     # search scripts
 grep "error" logfile.txt    # search word inside file
 wc -l file.txt              # count lines
 ```
-![img](../images/img3.png)
+![img](images/img3.png)
 ---
 
 ## User and Permission Related
@@ -75,7 +75,7 @@ du -sh folder/  # folder size
 free -m         # memory usage
 lsblk           # list disks/partitions
 ```
-![img](../images/img4.png)
+![img](images/img4.png)
 ---
 
 ## Networking Commands I Use
@@ -106,6 +106,6 @@ yum install nginx -y
 yum remove httpd -y
 yum update -y
 ```
-![img](../images/img5.png)
+![img](images/img5.png)
 ---
 `
