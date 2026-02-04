@@ -78,4 +78,4 @@ chgrp
 ```bash
 chgrp devops file.txt
 ```
-![img](../images/img6.png)
+![img](images/img6.png)
