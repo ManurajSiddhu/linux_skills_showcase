@@ -7,10 +7,8 @@ Linux is a **multi-user operating system**, so controlling:
 - User accounts  
 - Group access  
 - Permissions  
-- Security  
-
-is very important for system admins and DevOps engineers.
-
+- Security
+  
 ---
 
 ## 🔹 Checking Current User
