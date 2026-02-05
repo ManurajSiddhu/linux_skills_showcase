@@ -7,7 +7,6 @@ This file contains my practice notes on:
 - Permission types
 - chmod usage
 - Ownership commands
-- Real-world examples
 
 ---
 
