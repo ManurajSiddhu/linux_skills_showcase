@@ -7,14 +7,13 @@ Disk management is an essential Linux skill for:
 - Cloud Engineers  
 - Server Maintenance  
 
-It includes:
-
-✅ Checking disk usage  
-✅ Partition management  
-✅ Mounting storage  
-✅ Monitoring free space  
-
----
+In Linux, everything is a file. Well, everything has a file in the dev folder in your device. 
+```bash
+For example:
+/dev/sda – First hard drive
+/dev/sdb – Second hard drive
+/dev/sdc1 – First partition on the second hard drive
+```
 
 ## 🔹 Checking Disk Space
 
