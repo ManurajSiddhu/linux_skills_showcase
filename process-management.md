@@ -4,7 +4,7 @@ Process management is one of the most important Linux administration skills.
 
 A **process** is simply a running program in Linux.
 
-Linux admins and DevOps engineers must know how to:
+Linux admins and engineers must know how to:
 
 - Monitor processes  
 - Kill unwanted tasks  
