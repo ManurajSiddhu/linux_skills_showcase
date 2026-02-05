@@ -34,6 +34,7 @@ Filesystem           Size  Used Avail Use% Mounted on
 du -sh /home/siddhu  #Check size of a folder
 du -h --max-depth=1  #Check size of all folders inside
 ```
+![img](images/img9.png)
 ### Listing Block Devices
 ```bash
 lsblk  #View disks and partitions
