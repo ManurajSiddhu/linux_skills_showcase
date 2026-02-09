@@ -49,15 +49,20 @@ sudo systemctl stop sshd  #Stop a service
 
 sudo systemctl restart sshd  #Restart a service
 ```
+![img](images/img16.png)
+
 ##  Enable or Disable Services 
 ```bash
 sudo systemctl enable sshd  #Enable service on system
 
 sudo systemctl disable sshd  #Disable service from starting
 ```
+![img](images/img17.png)
+
 ##  Viewing Service Logs
 ```bash
 journalctl -u sshd  #To check logs of a specific service
 
 journalctl -u sshd -f  #Logs
 ```
+![img](images/img18.png)
