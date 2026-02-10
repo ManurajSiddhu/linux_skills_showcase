@@ -63,6 +63,19 @@ crontab -l  #List cron jobs
 
 crontab -r  #Remove all cron jobs
 ```
+example:
+```bash
+#for this first create a script file 
+#A script file is for take the sshd service log
+vim service_logs.sh
+#make file executive
+sudo chmod +x service_logs.sh
+#now set crontab job
+crontab -e
+*/5 * * * * /home/siddhu/service_logs.sh
+```
+![img](images/img19.png)
+![img](images/img20.png)
 
 ##  Cron Job Examples
 ```bash
@@ -74,6 +87,8 @@ crontab -r  #Remove all cron jobs
 
 */5 * * * * /home/siddhu/monitor.sh  #Run script every 5 minutes
 ```
+![img](images/img21.png)
+
 ##  Using at Command (One-Time Jobs)
 ```bash
 at 10:30  #Schedule a job
@@ -82,3 +97,6 @@ sh /home/siddhu/test.sh  #Press Ctrl + D to save
 atq  #List at jobs
 atrm <job_id>  #Remove at job
 ```
+![img](images/img22.png)
+![img](images/img23.png)
+![img](images/img21.png)
