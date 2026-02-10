@@ -99,4 +99,4 @@ atrm <job_id>  #Remove at job
 ```
 ![img](images/img22.png)
 ![img](images/img23.png)
-![img](images/img21.png)
+
